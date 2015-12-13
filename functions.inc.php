@@ -1,3 +1,4 @@
+
 <?php
 /*########################################################
 SIMPLE CGMINER REMOTE MONITORING SCRIPT WITH ALERTS
@@ -16,15 +17,15 @@ BTC : 1EA8UrpifP9hi7LZHjJphCJQ6Hh45mb5pP
 // Change YOUR_RIG_REMOTE_IP to your rig REMOTE IP (NOT local IP!)
 // To get your remote IP go to http://www.whatismyip.com/
 // Uncomment (remove //) if you want to add more miners.
-$r[0]['name'] = 'MINER1';
-$r[0]['ip'] = 'YOUR_RIG_REMOTE_IP'; 
-$r[0]['port'] = '4001';
+$r[0]['name'] = 'Antminer S3+';
+$r[0]['ip'] ='71.206.167.108';
+$r[0]['port'] = '4028';
 $r[0]['alert'] = TRUE; //set FALSE if you don't want to send alerts for this rig
 
-//$r[1]['name'] = 'MINER2';
-//$r[1]['ip'] = 'YOUR_RIG_REMOTE_IP';
-//$r[1]['port'] = '4002';
-//$r[1]['alert'] = TRUE; //set FALSE if you don't want to send alerts for this rig
+$r[1]['name'] = 'zoomhash RPi';
+$r[1]['ip'] = '71.206.167.108';
+$r[1]['port'] = '4027';
+$r[1]['alert'] = TRUE; //set FALSE if you don't want to send alerts for this rig
 
 //$r[2]['name'] = 'MINER3';
 //$r[2]['ip'] = 'YOUR_RIG_REMOTE_IP';
@@ -42,7 +43,7 @@ $r[0]['alert'] = TRUE; //set FALSE if you don't want to send alerts for this rig
 
 // URL to the script
 // Change WEBSERVER_IP to your Webserver IP or Webserver Domain if you have it.
-define('SCRIPT_URL', 'http://WEBSERVER_IP/monitoring/');
+define('SCRIPT_URL', 'http://dc.brightlytechnologies.com/monitor/');
 
 // Time in Seconds to Auto Refresh the script
 define('SCRIPT_REFRESH', 20);
@@ -55,11 +56,10 @@ define('SHOW_POOLS', TRUE);
 --------------*/
 
 // E-Mail for Alerts
-define('ALERT_EMAIL', 'your@email.com');
+define('ALERT_EMAIL', 'chris.brightly@gmail.com');
 
 // Maximum allowed GPU Temperature before Alert is sent
 define('ALERT_TEMP', 75);
-
 // Maximum allowed difference in percentage (%) between 5s MH/s and (avg) MH/s before Alert is sent.
 // Formula : DIFFERENCE = 100 - ((5s / avg) * 100)
 //
