@@ -18,13 +18,13 @@ BTC : 1EA8UrpifP9hi7LZHjJphCJQ6Hh45mb5pP
 // To get your remote IP go to http://www.whatismyip.com/
 // Uncomment (remove //) if you want to add more miners.
 $r[0]['name'] = 'Antminer S3+';
-$r[0]['ip'] ='71.206.167.108';
+$r[0]['ip'] ='10.0.0.9';
 $r[0]['port'] = '4028';
 $r[0]['alert'] = TRUE; //set FALSE if you don't want to send alerts for this rig
 
-$r[1]['name'] = 'zoomhash RPi';
-$r[1]['ip'] = '71.206.167.108';
-$r[1]['port'] = '4027';
+$r[1]['name'] = 'Antminer C1';
+$r[1]['ip'] = '10.0.0.10';
+$r[1]['port'] = '4028';
 $r[1]['alert'] = TRUE; //set FALSE if you don't want to send alerts for this rig
 
 //$r[2]['name'] = 'MINER3';
