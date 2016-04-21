@@ -17,13 +17,13 @@ BTC : 1EA8UrpifP9hi7LZHjJphCJQ6Hh45mb5pP
 // Change YOUR_RIG_REMOTE_IP to your rig REMOTE IP (NOT local IP!)
 // To get your remote IP go to http://www.whatismyip.com/
 // Uncomment (remove //) if you want to add more miners.
-$r[0]['name'] = 'Antminer c1';
-$r[0]['ip'] ='10.0.0.10';
+$r[0]['name'] = 'Antminer C1';
+$r[0]['ip'] ='192.168.1.10';
 $r[0]['port'] = '4028';
 $r[0]['alert'] = TRUE; //set FALSE if you don't want to send alerts for this rig
 
 $r[1]['name'] = 'Antminer S3+';
-$r[1]['ip'] = '10.0.0.11';
+$r[1]['ip'] = '192.168.1.11';
 $r[1]['port'] = '4028';
 $r[1]['alert'] = TRUE; //set FALSE if you don't want to send alerts for this rig
 
@@ -43,7 +43,7 @@ $r[2]['alert'] = TRUE; //set FALSE if you don't want to send alerts for this rig
 
 // URL to the script
 // Change WEBSERVER_IP to your Webserver IP or Webserver Domain if you have it.
-define('SCRIPT_URL', 'http://dc.brightlytechnologies.com/monitor/');
+define('SCRIPT_URL', 'http://192.168.1.40/cgmonitor/');
 
 // Time in Seconds to Auto Refresh the script
 define('SCRIPT_REFRESH', 20);
